@@ -19,7 +19,7 @@ public class Author {
     private String firstName;
     private String lastName;
 
-    @ManyToMany(mappedBy = "Authors")
+    @ManyToMany(mappedBy = "authors")
     private Set<Book> books;
 
     public Author(String firstName, String lastName, Set<Book> books) {
